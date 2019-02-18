@@ -228,6 +228,7 @@ let s:white = "FFFFFF"
 let s:file_extension_colors = {
   \ 'styl'     : s:green,
   \ 'scss'     : s:pink,
+  \ 'sass'     : s:pink,
   \ 'htm'      : s:darkOrange,
   \ 'html'     : s:darkOrange,
   \ 'erb'      : s:red,
@@ -238,6 +239,7 @@ let s:file_extension_colors = {
   \ 'md'       : s:yellow,
   \ 'markdown' : s:yellow,
   \ 'json'     : s:beige,
+  \ 'jbuilder' : s:beige,
   \ 'js'       : s:beige,
   \ 'jsx'      : s:blue,
   \ 'rb'       : s:red,
@@ -307,6 +309,9 @@ let s:file_extension_colors = {
   \ 'psd'      : s:darkBlue,
   \ 'psb'      : s:darkBlue,
   \ 'ts'       : s:blue,
+  \ 'tgz'      : s:brown,
+  \ 'tar'      : s:brown,
+  \ 'gz'       : s:brown,
   \ 'jl'       : s:purple
 \}
 
@@ -328,6 +333,12 @@ let s:file_node_exact_matches = {
   \ 'node_modules'                     : s:green,
   \ 'react.jsx'                        : s:blue,
   \ 'procfile'                         : s:purple,
+  \ 'README.md'                        : s:yellow,
+  \ 'package.json'                     : s:green,
+  \ 'Rakefile'                         : s:red,
+  \ 'Gemfile'                          : s:red,
+  \ 'tags'                             : s:brown,
+  \ 'Jenkinsfile'                      : s:beige,
 \}
 
 let s:file_node_pattern_matches = {
@@ -337,6 +348,7 @@ let s:file_node_pattern_matches = {
   \ '.*require.*\.js$'      : s:blue,
   \ '.*materialize.*\.js$'  : s:salmon,
   \ '.*materialize.*\.css$' : s:salmon,
+  \ '.*spec\.ts$'           : s:lightPurple,
   \ '.*mootools.*\.js$'     : s:white
 \}
 
@@ -367,8 +379,12 @@ let s:enabled_extensions = [
   \ 'rs',
   \ 'scala',
   \ 'scss',
+  \ 'sass',
   \ 'sh',
   \ 'sql',
+  \ 'tgz',
+  \ 'tar',
+  \ 'gz',
   \ 'vim',
 \]
 
